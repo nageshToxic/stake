@@ -22,7 +22,7 @@ const Home = () => {
     <div>
       <Navbar ideaBtn={true} />
       <section className={"bg-[url('/bg.svg')]  w-full  min-h-screen"}>
-        <div className="w-full p-6 pt-10 flex justify-around flex-wrap gap-6">
+        <div className="w-[80%] mx-auto p-6 pt-10 grid md:grid-cols-3 sm:grid-cols-2 place-items-center grid-cols-1 gap-6">
           {data?.map((idea) => (
             <IdeaCard
               title={idea.title}
