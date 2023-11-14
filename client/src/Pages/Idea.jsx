@@ -40,6 +40,10 @@ const Idea = () => {
     }
   };
 
+  const handleCancel =  () => {
+    navigate("/");
+  }
+
   return (
     <div>
       <Navbar ideaBtn={false} />
@@ -82,19 +86,27 @@ const Idea = () => {
               placeholder={"Enter Email"}
             />
 
-            <div className=" w-[54%] mx-auto  my-5">
+            <div className=" w-[54%] mx-auto  my-5 pr-4">
               <button
                 onClick={handleSubmit}
                 type="submit"
-                className=" w-[150px] text-sm bg-blue-700 hover:opacity-90 text-white px-2 py-2.5 rounded-md"
+                className=" w-[150px] text-sm bg-blue-700 hover:opacity-90 text-white px-2 py-2.5 rounded-md mr-4"
               >
                 Submit
+              </button>
+              
+              <button
+                onClick={handleCancel}
+                type="cancel"
+                className=" w-[150px] text-sm bg-red-600 hover:opacity-90 text-white px-2  py-2.5 rounded-md"
+              >
+                Cancel
               </button>
             </div>
           </form>
         </div>
       </section>
-    </div>
+          </div>
   );
 };
 

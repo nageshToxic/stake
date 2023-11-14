@@ -15,7 +15,7 @@ const Navbar = ({ ideaBtn }) => {
   return (
     <nav
       onsc
-      className="bg-blue-100 border-gray-200 px-2 sm:px-4 py-2.5 drop-shadow-lg z-10 sticky w-full "
+      className="bg-blue-200 border-gray-200 px-2 sm:px-4 py-2.5 shadow-xl  drop-shadow-lg z-10 sticky w-full "
     >
       <div className="w-[90%] m-auto ">
         <div className="container flex flex-wrap items-center justify-between mx-auto py-1.5">
@@ -50,6 +50,9 @@ const Navbar = ({ ideaBtn }) => {
               ></path>
             </svg>
           </button>
+
+          <span className=" font-semibold whitespace-nowrap text-2xl ">Welcome Buddy ッ </span>
+
           <div className="hidden w-full md:block md:w-auto" id="navbar-default">
             {ideaBtn && (
               <Link to={"/idea"}>
@@ -57,14 +60,14 @@ const Navbar = ({ ideaBtn }) => {
                   type="button"
                   class="text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2 text-center "
                 >
-                  Submit Idea
+                  Submit your Idea 💡
                 </button>
               </Link>
             )}
             <button
               onClick={handleLogout}
               type="button"
-              class="text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2 text-center ml-2"
+              class="text-white bg-red-600 hover:bg-red-400 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2 text-center ml-2"
             >
               Logout
             </button>
