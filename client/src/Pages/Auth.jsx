@@ -110,11 +110,11 @@ const Auth = () => {
 
   return (
     <div className="bg-[url('/bg.svg')] min-h-[93vh] flex flex-col">
-      <div className="mx-auto mt-8">
+      <div className="mx-auto mt-5">
         <img src="/logo-bg.png" alt="logo" height={100} width={100} />
       </div>
-      <div className="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
-        <div className=" bg-white px-6 py-8 rounded shadow-lg text-black w-full">
+      <div className="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2 pt-3">
+        <div className=" bg-white px-6 py-8 rounded-xl shadow-lg text-black w-full">
           <h1 className="mb-8 text-3xl text-center font-mono">
             {signup ? "Sign up" : "Login"}
           </h1>
@@ -130,8 +130,7 @@ const Auth = () => {
           )}
 
           <input
-            onChange={handlechange}
-            type="number"
+            onChange={handlechange} 
             className="block border border-grey-light w-full p-3 rounded mb-4"
             name="phone"
             placeholder="Phone"
